@@ -1,0 +1,47 @@
+# IDE ve Editör Dosyaları
+.idea/                  # PhpStorm, IntelliJ IDEA
+.vscode/                # VS Code
+*.iml                   # IntelliJ IDEA modül dosyaları
+*.sublime-project       # Sublime Text
+*.sublime-workspace     # Sublime Text
+.DS_Store               # macOS özel dosyalar
+Thumbs.db               # Windows özel dosyalar
+
+# Bağımlılık Yöneticisi Dizinleri
+/vendor/                # Composer bağımlılıkları
+
+# Ortam Değişkenleri Dosyaları (Çok Önemli!)
+.env                    # Hassas bilgiler içeren ortam değişkenleri dosyası
+.env.*local             # Laravel vb. framework'lerde kullanılan yerel .env varyantları
+
+# Log ve Cache Dizinleri
+/storage/*.log          # Laravel, Symfony gibi framework'lerdeki log dosyaları
+/storage/logs/          # Genel log dizini
+/cache/                 # Genel cache dizini
+/tmp/                   # Geçici dosyalar
+
+# Çeşitli İndirilen Dosyalar / Oluşturulan Dosyalar
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.sql                   # Veritabanı dökümleri (genellikle elle versiyonlanmalı, ama otomatik oluşturulanlar hariç)
+*.sqlite                # SQLite veritabanı dosyaları
+
+/phpmyadmin/
+
+# Web Sunucusu Belirli Dosyalar (örneğin Apache veya Nginx yapılandırma yedekleri)
+*.bak
+*.old
+*.tmp
+
+# PHP Özelleşmiş Dosyalar
+*.phar
+*.php~
+*.php-bak
+
+# Node.js (Eğer projenizde frontend bağımlılıkları varsa)
+/node_modules/
+/npm-debug.log*
+/yarn-debug.log*
+/yarn-error.log*
