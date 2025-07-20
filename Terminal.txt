@@ -14,3 +14,19 @@ Dosya yapılarını oluşturmak için kullanıyorum
 New-Item -ItemType File -Path "public\index.php" -Force
 
 -Force parametresi, klasör zaten varsa hata vermemesi için eklenmiştir.
+
+
+English 
+
+@(
+    "app\Controllers\Admin",
+    "app\Controllers\Front",
+    "app\Core",
+    "app\Models",
+    "public\css",
+    "public\js",
+    "views\admin",
+    "views\front",
+    "views\layouts"
+) | ForEach-Object { New-Item -ItemType Directory -Path $_ -Force }
+New-Item -ItemType File -Path "public\index.php" -Force
